@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Specifica la codifica dei caratteri del documento -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Imposta la viewport per una corretta visualizzazione su dispositivi mobili -->
+    <title>Pong Game</title> <!-- Titolo della pagina visualizzato sulla scheda del browser -->
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Collegamento al file CSS esterno -->
+</head>
+<body>
+    <div id="menu" class="menu"> <!-- Contenitore del menu iniziale -->
+        <h2>Pong Game</h2> <!-- Titolo del gioco -->
+        <input type="text" id="player1Name" placeholder="Player 1 Name"> <!-- Campo di input per il nome del Giocatore 1 -->
+        <input type="text" id="player2Name" placeholder="Player 2 Name"> <!-- Campo di input per il nome del Giocatore 2 -->
+        <input type="number" id="winningScore" placeholder="Winning Score"> <!-- Campo di input per il punteggio vincente -->
+        <button onclick="startGame()">Start Game</button> <!-- Pulsante per avviare il gioco, che chiama la funzione startGame() al click -->
+    </div>
+
+    <div id="game" class="game hidden"> <!-- Contenitore principale del gioco, inizialmente nascosto -->
+        <div class="container"> <!-- Contenitore del campo da gioco -->
+            <div class="score"> <!-- Contenitore del tabellone segnapunti -->
+                <div class="player1-score">0</div> <!-- Display del punteggio del Giocatore 1 -->
+                <div class="divider">:</div> <!-- Divisore dei punteggi -->
+                <div class="player2-score">0</div> <!-- Display del punteggio del Giocatore 2 -->
+            </div>
+            <div class="game-screen"> <!-- Contenitore dell'area di gioco -->
+                <div class="midline"></div> <!-- Linea centrale del campo da gioco -->
+                <div class="ball"></div> <!-- Elemento rappresentante la pallina -->
+                <div class="paddle" id="player1"></div> <!-- Racchetta del Giocatore 1 -->
+                <div class="paddle" id="player2"></div> <!-- Racchetta del Giocatore 2 -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Collegamento al file JavaScript esterno -->
+</body>
+</html>

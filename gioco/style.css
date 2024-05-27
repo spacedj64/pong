@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.menu, .game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.menu input, .menu button {
+    margin: 10px;
+    padding: 5px 10px;
+}
+
+.menu button {
+    cursor: pointer;
+}
+
+.game-screen {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: black;
+    border: 2px solid white;
+    overflow: hidden;
+}
+
+.midline {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: white;
+}
+
+.ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.paddle {
+    position: absolute;
+    width: 10px;
+    height: 80px;
+    background-color: blue;
+}
+
+#player1 {
+    left: 20px;
+}
+
+#player2 {
+    right: 20px;
+}
+.game-screen {
+    position: relative;
+    width: 600px; /* Imposta la larghezza del campo di gioco */
+    height: 400px; /* Imposta l'altezza del campo di gioco */
+    margin: 0 auto; /* Centra il campo di gioco orizzontalmente */
+}
+/* Regole per il tabellone dei punteggi */
+.score {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    padding: 10px;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    z-index: 2;
+}
+
+
+.score div {
+    padding: 0 10px; /* Aggiunge spazio interno ai div contenenti i punteggi */
+}
+
+.menu input, .menu button {
+    margin: 10px;
+    padding: 5px 10px;
+    width: 200px; /* Imposta una larghezza fissa per uniformità */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu input, .menu button {
+    margin: 10px;
+    padding: 5px 10px;
+}
+
+.menu input, .menu button {
+    margin: 10px auto; /* Margine superiore e inferiore 10px, margine laterale automatico per centrare */
+    padding: 10px; /* Aggiungi padding per spaziatura interna */
+    display: block; /* Imposta gli elementi <input> e <button> come blocchi per il layout verticale */
+    width: 200px; /* Imposta una larghezza fissa per uniformità */
+    text-align: center; /* Allinea il testo al centro */
+}
+
+.menu {
+    text-align: center;
+}
+
+#player1 {
+    left: 20px;
+}
+
+#player2 {
+    right: 20px;
+}
+
+.score {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px; /* Increase width to accommodate player names */
+    padding: 10px;
+    background-color: rgb(0, 0, 0); /* Set background color to white */
+    border: 2px solid rgb(255, 255, 255); /* Set border color to black for contrast */
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    color: rgb(255, 255, 255); /* Set text color to black */
+    z-index: 2;
+}
+
